@@ -1,0 +1,65 @@
+html {
+    font-size: auto;
+    /* 字體大小, 範例設定為10px, 這邊設定為auto */
+    /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-family: "Doto", "Noto Serif TC", serif;
+    /* font-family格式： family-name(字體系列名稱), generic-family(通用系列名稱)*/
+    /* family-name：如 "Doto", "Noto Serif TC"。 */
+    /* generic-family：如 "serif"。 */
+    /* family-name在前，generic-family擺最後。當瀏覽器不支援前者的時候，會到後者選擇字體。*/
+    /* 每個值須以逗號分隔。*/
+    /* 若字體名稱包含空格，須以英文引號引起來。*/
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+        "ROND" 0;
+
+    /* 改變頁面顏色 */
+    background-color: #4130D9;
+}
+
+body {
+    width: 600px;
+    /* 將body寬度固定為600像素 */
+    margin: 0 auto;
+    /* 設定margin寬度 */
+    /* 
+    只有一個元素：影響上下左右。
+    兩個元素：第一個值影響上下，第二個值影響左右。
+    三個元素：第一個值影響上，第二個值影響左右，第三個值影響下。
+    四個元素：第一個值影響上，第二個值影響右，第三個值影響下，第四個值影響左。    
+    */
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    /* 設定padding寬度 */
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    /* 文字顏色 */
+    text-shadow: 3px 3px 1px black;
+    /*文字陰影 */
+    /*
+    第一個像素值設定陰影相對於文字的水平偏移量- 陰影移動的距離：負值應將其向左移動。
+    第二個像素值設定陰影相對於文字的垂直偏移量－在本例中，陰影向下移動多遠；負值應該將其向上移動。
+    第三個像素值設定陰影的模糊半徑－數值越大，陰影越模糊。
+    第四個值設定陰影的基底色。
+    */
+    font-size: 60px;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
